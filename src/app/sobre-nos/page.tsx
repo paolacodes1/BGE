@@ -223,8 +223,8 @@ export default function SobreNosPage() {
               </span>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-bamberg-navy leading-tight">
-                "Nossos sonhos se encontram 
-                <span className="text-bamberg-primary"> logo ali!</span>"
+                &ldquo;Nossos sonhos se encontram 
+                <span className="text-bamberg-primary"> logo ali!</span>&rdquo;
               </h2>
               
               <p className="text-lg text-bamberg-text-secondary leading-relaxed">

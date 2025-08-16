@@ -84,7 +84,7 @@ export default function Testimonials() {
             {/* Review Count */}
             <div className="flex items-center gap-4">
               <div className="flex -space-x-2">
-                {testimonials.slice(0, 3).map((testimonial, index) => (
+                {testimonials.slice(0, 3).map((testimonial) => (
                   <Avatar key={testimonial.id} className="border-2 border-white w-12 h-12">
                     <AvatarFallback className="bg-bamberg-primary text-white font-semibold">
                       {testimonial.avatar}
@@ -112,7 +112,7 @@ export default function Testimonials() {
               className="space-y-6"
             >
               <blockquote className="text-lg md:text-xl text-bamberg-navy leading-relaxed">
-                "{currentTestimonial.content}"
+                &ldquo;{currentTestimonial.content}&rdquo;
               </blockquote>
 
               <div className="w-16 h-px bg-bamberg-text-secondary"></div>
@@ -182,12 +182,12 @@ export default function Testimonials() {
 
             {/* Dots Indicator */}
             <div className="flex justify-center gap-2 mt-6">
-              {testimonials.map((_, index) => (
+              {testimonials.map((_, dotIndex) => (
                 <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
+                  key={dotIndex}
+                  onClick={() => setCurrentIndex(dotIndex)}
                   className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex 
+                    dotIndex === currentIndex 
                       ? 'bg-bamberg-primary w-8' 
                       : 'bg-bamberg-text-secondary/30'
                   }`}

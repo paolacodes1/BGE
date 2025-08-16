@@ -9,10 +9,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,        // Required for static export
     domains: ['github.com', 'avatars.githubusercontent.com'], // Add any external image domains
   },
-  experimental: {
-    // Disable features that aren't compatible with static export
-    serverActions: false,
-  },
 };
 
 export default nextConfig;

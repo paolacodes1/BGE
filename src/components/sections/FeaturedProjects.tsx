@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ExternalLink, MapPin, Users, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { developments, getDevelopmentsByStatus, getStatusLabel } from "@/lib/data";
+import { developments, getStatusLabel } from "@/lib/data";
 
 interface ProjectCardProps {
   project: typeof developments[0];
@@ -190,7 +190,6 @@ function ProjectModal({ project }: { project: typeof developments[0] }) {
 
 export default function FeaturedProjects() {
   const ref = useRef(null);
-  const carouselRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [currentIndex, setCurrentIndex] = useState(0);
   

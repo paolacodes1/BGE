@@ -1,5 +1,14 @@
+import { developments } from "@/lib/data";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+// Required for static export
+export async function generateStaticParams() {
+  return developments.map((dev) => ({
+    slug: dev.slug,
+  }));
 }
 
 export default async function DevelopmentPage({ params }: PageProps) {
