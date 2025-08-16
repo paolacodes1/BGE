@@ -1,4 +1,8 @@
+# BGE - Bamberg Gisler Empreendimentos
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+A sophisticated real estate website featuring Dubai Realty-inspired design with Bamberg Gisler branding.
 
 ## Getting Started
 
